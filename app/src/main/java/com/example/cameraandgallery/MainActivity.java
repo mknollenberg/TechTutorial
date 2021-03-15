@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
         selectedImage = findViewById(R.id.displayImageView);
         cameraBtn = findViewById(R.id.cameraButton);
-        galleryBtn = findViewById(R.id.galleryButton);
 
         cameraBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,12 +38,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        galleryBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Gallery Button is Clicked.",Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     private void askCameraPermission() {
